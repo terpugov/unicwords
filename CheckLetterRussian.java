@@ -22,7 +22,7 @@ public class CheckLetterRussian implements TextCheckable{
     }
 
     public boolean checkSpace(char chr){
-        Pattern p = Pattern.compile("[ \\f\\n\\r\\t\\v]*");
+        Pattern p = Pattern.compile("[\",.!?'` ]");
         Matcher m = p.matcher(Character.toString(chr));
         if (m.matches()) return true;
         else return false;

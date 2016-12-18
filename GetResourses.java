@@ -41,7 +41,7 @@ public class GetResourses {
             messageCount++;
             System.out.println(messageCount);
             System.out.println(monitor.getAllWords());
-            System.out.println(monitor.getMessage());
+            System.out.println(monitor.getMessage() + " " + monitor.getAllWords().size());
 
         }
 

@@ -1,5 +1,5 @@
 package ru.inno.unicwords;
-
+import org.apache.log4j.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -20,7 +20,7 @@ public class Monitor {
     }
 
     public void setMessage(String message){
-        this.message = message;
+        this.message += "\n" + message;
     }
 
     public String getMessage(){
