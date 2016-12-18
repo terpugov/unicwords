@@ -15,7 +15,6 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by mikhail on 17/12/16.
  */
-
 /**+
  * Парсит по пробелам и знакам препинания русские слова.
  * Если есть парные слова, то программа заверщается

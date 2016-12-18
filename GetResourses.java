@@ -34,7 +34,7 @@ public class GetResourses {
             count++;
             File file = new File(i);
             ThreadPull thrdpull = new ThreadPull(file, monitor );
-            thread = new Thread(GROUP, thrdpull, "Thread" + count );
+            thread = new Thread(GROUP, thrdpull, "Thread " + count );
             listOfThread.add(thread);
             thread.start();
 
