@@ -15,6 +15,13 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by mikhail on 17/12/16.
  */
+
+/**+
+ * Парсит по пробелам и знакам препинания русские слова.
+ * Если есть парные слова, то программа заверщается
+ * Если есть нерусские слова или запрешенные символы, то программа завершается
+ *
+ */
 public class ThreadPull implements Runnable {
 
     private static final Logger logger = LoggerFactory.getLogger(ThreadPull.class);
@@ -121,7 +128,7 @@ public class ThreadPull implements Runnable {
                                         monitor.setFinishit(finishit);
 
                                         monitor.setMessage("Wrong text in file");
-                                    System.out.println((char)c +" " +  c + "ight here");
+//                                    System.out.println((char)c +" " +  c + "ight here");
                                         return;
                                     }
                                 }
